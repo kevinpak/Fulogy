@@ -1,0 +1,135 @@
+/*--------------------------------
+-------------Default--------------
+---------------------------------*/
+*{padding: 0;margin: 0;outline: none;position: relative;font-family:'Arial', 'Helvetica', sans-serif;}
+li{list-style: none;}
+img{max-width: 100%;height: auto;}
+[class*="icon-"]{font-family: 'Verdana', 'Geneva', sans-serif;}
+
+.container{
+  max-width: 960px;
+  margin: 0 auto;
+}
+.cols{
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -moz-flex-wrap:wrap;
+  -webkit-flex-wrap:wrap;
+  -ms-flex-wrap:wrap;
+  -o-flex-wrap:wrap;
+  flex-wrap:wrap;
+}
+.col{
+  padding: 0 15px;
+}
+
+.row-between{
+  -moz-justify-content: space-between;
+  -webkit-justify-content: space-between;
+  -ms-justify-content: space-between;
+  -o-justify-content: space-between;
+  justify-content: space-between;
+}
+@media screen and (max-width: 640px){
+  .col{
+    padding: 0 5px;
+  }
+}
+
+.for__mobile{
+  display: none;
+}
+@media screen and (max-width: 640px){
+  .for__mobile{
+    display: block;
+  }
+}
+
+
+
+.link__btn{
+  font-size: 14px;
+  display: inline-block; 
+  padding: 5px 8px;
+  background-color: #ddd;
+  box-shadow: 0 0 2px 2px #a1a1a1a1;
+  border-radius: 6px;
+}
+
+
+/*--------table--------*/
+.table{
+  font-size: 14px;
+  color: #4d4d4d;
+}
+.table tr td{
+  padding: 5px 5px;
+}
+.table tr td:first-child{
+  width: 150px;
+}
+
+
+
+/*-------------------------------
+--------mobile__nav__btn---------
+--------------------------------*/
+.mobile__nav__btn{
+  display: inline-block;
+  width: 25px;
+  height: 34px;
+  margin-left: 25px;
+  padding: 0 10px;
+  box-shadow: 0 0 2px 2px #000000;
+}
+.mobile__nav__btn:before {
+  content: "";
+  position: absolute;
+  width: calc(100% - 12px);
+  height: 4px;
+  left: 6px;
+  top: 6px;
+  background-color: #9f9f9f;
+  transition: all .25s linear;
+}
+.mobile__nav__btn:after {
+  content: "";
+  position: absolute;
+  width: calc(100% - 12px);
+  height: 4px;
+  left: 6px;
+  bottom: 6px;
+  background-color: #9f9f9f;
+  transition: all .25s linear;
+}
+.mobile__nav__btn>span {
+  display: inline-block;
+  width: calc(100% - 12px);
+  height: 4px;
+  background-color: #9f9f9f;
+  position: absolute;
+  left: 6px;
+  top: 14.5px;
+  transition: all .25s linear;
+}
+.mobile__nav__btn:hover:before {
+  top: 4px;
+  background-color: #ff910e;
+}
+.mobile__nav__btn:hover:after {
+  bottom: 4px;
+  background-color: #ff910e;
+}
+.mobile__nav__btn:hover>span {
+  background-color: #ff910e;
+}
+
+/*-------------------------------
+---------------Main---------------
+--------------------------------*/
+.main{
+  min-height: calc(100vh - 74px);
+  background-color: #f8f8f8;
+}
